@@ -3,7 +3,7 @@ package sqldemo;
 public class Demo {
 	public static void main(String args[]) throws Exception {
 		try {
-			MySqlConnect.getConnection();
+			Connection con = MySqlConnect.getConnection();
 		} catch (Exception e) {
 			System.out.println(e);
 		}
